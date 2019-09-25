@@ -48,9 +48,9 @@
 		8BFE2647233B81FC00B28193 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8BFE2648233B821700B28193 /* List.storyboard */,
 				8BFE264A233B824900B28193 /* Map.storyboard */,
 				8BFE264C233B826700B28193 /* Updates.storyboard */,
+				8BFE2648233B821700B28193 /* List.storyboard */,
 				8BFE264E233B827F00B28193 /* Diagram.storyboard */,
 				8BFE2650233B829500B28193 /* Chat.storyboard */,
 				DA8534E71FA3E9400044794B /* Main.storyboard */,

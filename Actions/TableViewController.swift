@@ -21,8 +21,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 1...10 {
-            Servers.append(Serverstodos(title: "Server #\(i)"))
+        for _ in 1...30 {
+            Servers.append(Serverstodos(title: "         MOBILENOC-FW.MOBILENOC.US.CA"))
         }
     }
     
