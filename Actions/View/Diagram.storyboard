@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WhL-wq-Rcy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Diagram" image="Diagram" id="OCx-P7-9ko"/>
+                    <tabBarItem key="tabBarItem" title="Diagram" image="diagram" id="OCx-P7-9ko"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azf-rx-GYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -29,6 +29,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Diagram" width="14.666666984558105" height="14.666666984558105"/>
+        <image name="diagram" width="35" height="35"/>
     </resources>
 </document>
