@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xBB-9J-bOU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TNV-an-jWq">
+            <objects>
+                <tabBarController id="xBB-9J-bOU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1B-qP-1tx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wGk-tq-og3" kind="relationship" relationship="viewControllers" id="QcV-IM-Nva"/>
+                        <segue destination="Ly3-vB-sp9" kind="relationship" relationship="viewControllers" id="Aof-vB-oZz"/>
+                        <segue destination="oB0-Yu-6fw" kind="relationship" relationship="viewControllers" id="vBH-ei-ReV"/>
+                        <segue destination="0ka-XM-nRW" kind="relationship" relationship="viewControllers" id="QL9-9K-cM2"/>
+                        <segue destination="Scj-tK-Rq1" kind="relationship" relationship="viewControllers" id="lIj-H0-raA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZi-Bs-8cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2651" y="-385"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="YHX-4c-96Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="wGk-tq-og3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="d6g-e4-7Xt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7S-WZ-dxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006" y="-722"/>
+        </scene>
+        <!--Updates-->
+        <scene sceneID="JA8-LY-miJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Updates" id="Ly3-vB-sp9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Updates" image="updates" id="Dz2-Ez-z2h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xa-Xv-VNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006" y="-614"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="awv-Be-epE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="List" id="oB0-Yu-6fw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="list" id="gfe-Tu-oTL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dl-bh-dEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006" y="-509"/>
+        </scene>
+        <!--Diagram-->
+        <scene sceneID="mtg-eC-WUh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Diagram" id="0ka-XM-nRW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Diagram" image="Diagram" id="9kC-48-DNX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWC-zw-uyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2014" y="-420"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="baT-da-kzA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="Scj-tK-Rq1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat" id="h7f-ed-bsV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZX6-mx-NHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006" y="-320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Diagram" width="14.666666984558105" height="14.666666984558105"/>
+        <image name="Map" width="10.666666984558105" height="12.333333015441895"/>
+        <image name="chat" width="44" height="44"/>
+        <image name="list" width="36" height="31"/>
+        <image name="updates" width="39" height="35"/>
+    </resources>
+</document>
