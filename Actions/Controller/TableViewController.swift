@@ -14,7 +14,9 @@ final class Serverstodos {
     }
 }
 
-class TableViewController: UITableViewController {
+class TableViewController: UIViewController , UITableViewDataSource , UITableViewDelegate {
+    
+    @IBOutlet weak var tableview1: UITableView!
     
     var Servers = [Serverstodos]()
     
@@ -22,13 +24,13 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         for _ in 1...30 {
-            Servers.append(Serverstodos(title: "         MOBILENOC-FW.MOBILENOC.US.CA"))
+            Servers.append(Serverstodos(title: "   MOBILENOC-FW.MOBILENOC.US.CA"))
         }
     }
     
     // Mark: - Table view delegate
     
-    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+   func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let Drone = DroneAction (at: indexPath)
         let Router = RouterAction (at: indexPath)
         let Alert = AlertAction (at: indexPath)
@@ -83,12 +85,12 @@ class TableViewController: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return Servers.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActiveCell", for: indexPath)
@@ -98,7 +100,8 @@ class TableViewController: UITableViewController {
         let activedevices = Servers[indexPath.row]
         cell.textLabel?.text = activedevices.title
         cell.textLabel?.textAlignment = .center
-        cell.detailTextLabel?.text = "4.71.144.122"
+        cell.detailTextLabel?.textAlignment = .center
+        cell.detailTextLabel?.text = "     4.71.144.122"
         cell.detailTextLabel?.textColor = .gray
         return cell
     }

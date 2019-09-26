@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Actions
-//
-//  Created by Gary Tokman on 10/27/17.
-//  Copyright © 2017 Gary Tokman. All rights reserved.
-//
+
 
 import UIKit
 
